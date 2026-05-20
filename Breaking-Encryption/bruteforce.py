@@ -1,12 +1,9 @@
 import cryp
-from tqdm import tqdm
 from alive_progress import alive_bar
 import string
 import multiprocessing
 
 PRINTABLE = set(bytes(string.printable, "ascii"))
-L = tqdm.get_lock()
-pbar = tqdm()
 
 num_workers = 10
 
