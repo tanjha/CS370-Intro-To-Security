@@ -16,7 +16,6 @@ def main():
         nonce = n.read()
     with open("ciphertext", "rb") as ct:
         ciphertext = ct.read()
-    # bruteforce(nonce, ciphertext)
 
     # MULTIPROCESS
     total = 26**6
